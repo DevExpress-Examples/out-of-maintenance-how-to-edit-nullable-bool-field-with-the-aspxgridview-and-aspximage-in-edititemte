@@ -1,0 +1,27 @@
+﻿.dxEditors_edtCheckBoxOn_img,
+.dxEditors_edtCheckBoxOff_img,
+.dxEditors_edtCheckBoxUndefined_img
+{
+    background-image: url('sprite.png');
+    -background-image: url('sprite.gif'); /* for IE6 */
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.dxEditors_edtCheckBoxOn_img {
+    background-position: -23px -44px;
+    width: 15px;
+    height: 15px;
+}
+
+.dxEditors_edtCheckBoxOff_img {
+    background-position: 0px -44px;
+    width: 15px;
+    height: 15px;
+}
+
+.dxEditors_edtCheckBoxUndefined_img {
+    background-position: -46px -44px;
+    width: 15px;
+    height: 15px;
+}
