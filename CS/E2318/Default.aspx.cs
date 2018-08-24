@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using DevExpress.Xpo;
 using DevExpress.Web.ASPxEditors;
 using DevExpress.Web.ASPxGridView;
@@ -16,11 +12,9 @@ public partial class _Default : System.Web.UI.Page {
                                         "dxEditors_edtCheckBoxOff_img",
                                         "dxEditors_edtCheckBoxUndefined_img"
                                     };
-
     protected void Page_Init(object sender, EventArgs e) {
         xds.Session = session;
     }
-
     protected void img_Init(object sender, EventArgs e) {
         ASPxImage img = sender as ASPxImage;
         GridViewEditItemTemplateContainer container = img.NamingContainer as GridViewEditItemTemplateContainer;
@@ -37,12 +31,10 @@ public partial class _Default : System.Web.UI.Page {
 
         img.ImageUrl = DevExpress.Web.ASPxClasses.EmptyImageProperties.GetGlobalEmptyImage(Page).Url;
     }
-
     protected void grid_RowUpdating(object sender, DevExpress.Web.Data.ASPxDataUpdatingEventArgs e) {
         Int32 i = Convert.ToInt32(hf["img"]);
         e.NewValues["Active"] = i.ToNullableBoolean();
     }
-
     protected void grid_RowInserting(object sender, DevExpress.Web.Data.ASPxDataInsertingEventArgs e) {
         Int32 i = Convert.ToInt32(hf["img"]);
         e.NewValues["Active"] = i.ToNullableBoolean();
@@ -58,7 +50,6 @@ public static class NullableBooleanExtensions {
         else
             return null;
     }
-
     public static Int32 ToInt32(this Boolean? b) {
         if (!b.HasValue)
             return 2;
