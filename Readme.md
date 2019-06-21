@@ -1,4 +1,7 @@
 # How to edit Nullable<bool> field with the ASPxGridView and ASPxImage in EditItemTemplate
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2318/)**
+<!-- run online end -->
 
 
 <p><strong>Starting with version 2011.1:<br></strong>I recommend that you use ASPxCheckBox instead of the demonstrated solution since the control supports the <em>Undefined</em> (<em>Grayed</em>) checked state, see <a href="http://community.devexpress.com/blogs/aspnet/archive/2011/04/26/asp-net-check-box-new-render-state-for-multiple-controls-coming-soon-in-2011-volume-1.aspx">ASP.NET Check Box - New Render State For Multiple Controls</a> for details.</p>
